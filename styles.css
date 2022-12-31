@@ -1,44 +1,16 @@
+body { 
+  text-align: center;
+  padding: 150px;
+} 
+h1 {
+  font-size: 50px;
+} 
 body {
-  font-family: arial;
-  box-sizing: border-box;
-  background: black;
-  display: flex;
-  justify-content: center;
-}
-
-.placeholder {
-  width: 100%;
-  max-width: 800px;
-  height: 800px;
-  background: #fff;
-  border-radius: 4px;
-  div {
-    background-color: #00cdac;
-    border-radius: 4px;
-  animation: pulse .65s infinite alternate;
-  }
-  &_img {
-    width: 100%;
-    padding-bottom: 40%;
-  }
-  &_text {
-    width: 100%;
-    max-width: 640px;
-    height: 24px;
-    margin: 24px auto;
-    padding: 0 4%;
-  &.short {
-    width: 50%;
-    }
-  }
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: .5;
-  }
-}
-
+  font: 20px Helvetica, sans-serif;     color: #333;
+} 
+article {
+  display: block;
+  text-align: left;
+  width: 650px;
+  margin: 0 auto;
+}  

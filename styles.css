@@ -1,16 +1,76 @@
-body { 
-  text-align: center;
-  padding: 150px;
-} 
-h1 {
-  font-size: 50px;
-} 
+
+:root {
+  --gradient: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  )
+}
+
 body {
-  font: 20px Helvetica, sans-serif;     color: #333;
+  font: 20px Helvetica, sans-serif;
+  min-height: 98vh;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: #333;
+  background: #ddd;
+  background-image: var(--gradient);
+  background-size: 400%;
+  animation: bg-animation 20s infinite alternate;
 } 
-article {
+
+@keyframes bg-animation {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+
+.title {
+  font-size: 40px;
+  text-transform: none;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+  color: #333;
+} 
+
+.content {
+  font-size: 20px;
+  background: white;
   display: block;
   text-align: left;
-  width: 650px;
-  margin: 0 auto;
-}  
+  width: 10vw;
+  min-width: 25vw;
+  padding: 3em;
+  color: #333;
+} 
+
+.custom-shape-divider-bottom-1672560565 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1672560565 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 203px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1672560565 .shape-fill {
+  fill: #363636;
+}

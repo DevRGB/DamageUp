@@ -1,5 +1,5 @@
 let Typewriter = 0;
-const txt = "Kuuuuuuuu";
+const txt = "SleepyRaz";
 const txts = "Social";
 
 function applyCursorRippleEffect(t) {

@@ -26,6 +26,7 @@
     border: 1px solid #393e46;
     border-radius: 0.25rem;
     background-color:rgba(0, 0, 0, 0.75);
+    animation: transitionIn 0.75s;
 }
 
 @media (min-width: 576px) {
@@ -49,5 +50,17 @@
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX('-10deg');
+    }
+
+    to {
+        opacity: 1;
+        transform: rotatex(0)
     }
 }

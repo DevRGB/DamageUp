@@ -35,6 +35,10 @@ body {
     list-style: none;
 }
 
+div {
+    animation: transitionIn 0.75s;
+}
+
 .social .icon {
     position: relative;
     background: rgba(198, 198, 198, 0.397);
@@ -146,6 +150,18 @@ html {
     100% {
         -webkit-transform: translateY(-8px);
         transform: translateY(-8px);
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX('-10deg');
+    }
+
+    to {
+        opacity: 1;
+        transform: rotatex(0)
     }
 }
 

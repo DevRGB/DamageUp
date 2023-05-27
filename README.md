@@ -1,5 +1,5 @@
 # Pogatory
-a pog website, no really
+old website see https://github.com/SleepyRaz/newPage for the new site
 
 
 
